@@ -1,11 +1,11 @@
-import type { GatsbyConfig } from "gatsby"
+import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `new`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `Heiko Ellerbrock`,
+    siteUrl: `https://www.heikoellerbrock.de`,
   },
-  plugins: [],
-}
+  plugins: ["gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-plugin-sass"],
+};
 
-export default config
+export default config;

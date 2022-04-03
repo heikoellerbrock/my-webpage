@@ -1,6 +1,6 @@
 import { Link } from "gatsby";
 import * as React from "react";
-import { container } from "./layout.module.css";
+import "./layout.scss";
 
 interface LayoutProps {
   pageTitle: string;
@@ -9,7 +9,7 @@ interface LayoutProps {
 
 const Layout = (props: LayoutProps) => {
   return (
-    <div className={container}>
+    <div className="container">
       <title>{props.pageTitle}</title>
       <nav>
         <ul>
