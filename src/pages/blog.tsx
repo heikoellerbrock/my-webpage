@@ -3,8 +3,8 @@ import Layout from "../components/layout";
 
 const Blog = () => {
   return (
-    <Layout pageTitle="Über mich">
-      <h2>Blog</h2>
+    <Layout pageTitle="Blog">
+      <p>mein erster Blog</p>
     </Layout>
   );
 };
