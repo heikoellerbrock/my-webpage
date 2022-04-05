@@ -29,9 +29,6 @@ const Layout = (props: LayoutProps) => {
           <li>
             <Link to="/">Home</Link>
           </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
         </ul>
       </nav>
       <main>
