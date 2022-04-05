@@ -4,7 +4,7 @@ import Layout from "../components/layout";
 
 const IndexPage = () => {
   return (
-    <Layout pageTitle="Heiko Ellerbrock">
+    <Layout pageTitle="Startseite">
       <h2>Herzlich Willkommen auf meiner Seit.</h2>
       <StaticImage
         alt="Portrait Heiko Ellerbrock"
