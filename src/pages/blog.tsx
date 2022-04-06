@@ -1,13 +1,33 @@
+import { graphql } from "gatsby";
 import * as React from "react";
 import Layout from "../components/layout";
 
-const Blog = () => {
+interface BlogProps {
+  data: any;
+}
+
+const Blog = (props: BlogProps) => {
   return (
     <Layout pageTitle="Blog">
-      <p>mein erster Blog</p>
+      <ul>
+        {props &&
+          props.data &&
+          props.data.allFile.nodes.map((node: any) => (
+            <li key={node.name}>{node.name}</li>
+          ))}
+      </ul>
     </Layout>
   );
 };
 
-// Step 3: Export your component
+export const query = graphql`
+  query {
+    allFile {
+      nodes {
+        name
+      }
+    }
+  }
+`;
+
 export default Blog;
